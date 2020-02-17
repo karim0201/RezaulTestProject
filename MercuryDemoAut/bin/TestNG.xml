@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="MercuryDemoAut">
+
+<listeners> 
+<listener class-name = "com.Mercury.utilities.Reporting"/>
+</listeners> 
+
+  <test name="Mercury Test" >
+   <parameter name="browser" value="chrome"/>
+    <classes>
+    <class name="com.Mercury.testCases.TC_Login_DDT" />  
+  <!--   <class name="com.Mercury.testCases.TC_LoginToMercury" />  -->
+   
+    </classes>
+  </test>
+  </suite>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="DemoGuru99">
+
+<listeners> 
+	<listener class-name = "com.guru.utilities.Reporting"/>
+</listeners> 
+
+	<test name="DemoGuru Test">
+		<parameter name="browser" value="chrome"></parameter>
+			<classes>
+			
+			<class name="com.guru.testCases.DemoGuru_NewCust_DDT_TC003"/>
+			 <!--	<class name="com.guru.testCases.DemoGuru_Login_TC001"/> -->
+			<!--	<class name="com.guru.testCases.DemoGuru_NewCustomer_TC002"></class>-->
+			</classes>
+	</test>
+
+</suite>
