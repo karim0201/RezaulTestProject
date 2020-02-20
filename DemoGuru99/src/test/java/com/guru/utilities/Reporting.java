@@ -18,7 +18,7 @@ import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
-//import com.aventstack.extentreports.reporter.configuration.ChartLocation;
+//import com.aventstack.extentreports.reporter.configuration;
 
 // Listener class to generate Extent reports
 public class Reporting extends TestListenerAdapter{
@@ -55,7 +55,6 @@ public class Reporting extends TestListenerAdapter{
 		logger=extent.createTest(tr.getName());
 		logger.log(Status.FAIL, MarkupHelper.createLabel(tr.getName(), ExtentColor.RED));
 		
-		//String screenshotPath=System.getProperty("user.dir")+"\\ScreenShots\\"+tr.getName()+".png";
 		String screenshotPath=System.getProperty("user.dir")+"\\Screenshots\\"+tr.getName()+".png";
 		
 		File f = new File(screenshotPath);
